@@ -5,6 +5,8 @@ A simple Node.js application with complete CI/CD pipeline using Jenkins, Docker,
 ## 📋 Overview
 
 This project demonstrates a modern DevOps workflow with:
+
+> 📹 **Demo Video**: [Watch the project demonstration](https://www.loom.com/share/e7b51c82374b425db6c166cbf299a392)
 - **Node.js Express** web application
 - **Docker** containerization
 - **Jenkins** CI/CD pipeline
