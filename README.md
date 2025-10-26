@@ -9,7 +9,6 @@ This project demonstrates a modern DevOps workflow with:
 - **Docker** containerization
 - **Jenkins** CI/CD pipeline
 - **Kubernetes** orchestration
-- **Health checks** and monitoring
 
 ## 🏗️ Project Structure
 
@@ -31,7 +30,6 @@ finc/
 - **Docker** containerization for consistent deployments
 - **Jenkins** automated CI/CD pipeline
 - **Kubernetes** deployment with 2 replicas
-- **Health probes** for container monitoring
 
 
 ## 🛠️ Prerequisites
@@ -64,7 +62,6 @@ finc/
 
 4. **Access the application**
    - Main endpoint: http://localhost:3000
-   - Health check: http://localhost:3000/health
 
 ### Docker
 
@@ -106,9 +103,6 @@ Required Jenkins credentials:
 - **Replicas**: 2 instances
 - **Image**: `rohansaini1512/finc:latest`
 - **Port**: 3000
-- **Health Checks**: 
-  - Readiness probe: `/health` endpoint
-  - Liveness probe: `/health` endpoint
 
 ### Service Configuration
 
@@ -136,7 +130,6 @@ kubectl logs -l app=nodejs-app
 | Endpoint | Method | Description |
 |----------|--------|-------------|
 | `/` | GET | Main application endpoint |
-| `/health` | GET | Health check for Kubernetes probes |
 
 ## 🐳 Docker Details
 
@@ -145,11 +138,6 @@ kubectl logs -l app=nodejs-app
 - **Exposed Port**: 3000
 - **Production Dependencies**: Only production packages installed
 
-## 📊 Monitoring
-
-The application includes health checks for Kubernetes:
-- **Readiness Probe**: Checks if the app is ready to receive traffic
-- **Liveness Probe**: Checks if the app is still running
 
 ## 🔧 Development
 
@@ -165,7 +153,6 @@ The application includes health checks for Kubernetes:
 ## 📝 Notes
 
 - The application is configured for production deployment
-- Health checks are essential for Kubernetes orchestration
 - The Jenkins pipeline automatically builds and deploys on code changes
 - Docker image is pushed to Docker Hub with build number tags
 
@@ -185,3 +172,4 @@ ISC License
 
 **Author**: Rohan Saini  
 **Version**: 1.0.0
+
