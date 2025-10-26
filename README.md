@@ -164,12 +164,5 @@ kubectl logs -l app=nodejs-app
 4. Test locally with Docker
 5. Submit a pull request
 
-## 📄 License
 
-ISC License
-
----
-
-**Author**: Rohan Saini  
-**Version**: 1.0.0
 
